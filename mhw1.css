@@ -1,0 +1,265 @@
+body{
+    margin: 0px;
+}
+
+#menu {
+    display: none;
+  }
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color:aliceblue;
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+#navbox{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    height: 75px;
+    background-color: coral;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    .navitem{
+    display: none;
+    }
+    #menu {
+        display: block;
+    }
+    #navbox{
+        justify-content: left;
+    }
+}
+
+.navitem{
+    color: coral;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 7px;
+    background-color: aliceblue;
+}
+
+.navitem:hover{
+    color:aliceblue;
+    background-color:black;
+}
+
+#mainbox{
+    height: 200px;
+}
+
+#sfondo{
+    background-image: url(https://static.wikia.nocookie.net/naruto/images/0/08/Gokage_hats.png/revision/latest?cb=20140220125558);
+    height: 500px;
+    position: relative;
+}
+
+#profilo{
+    background-color: black;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nome{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome{
+    color: aliceblue;
+    font-size: 24px;
+}
+
+#profilo img{
+    position: absolute;
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+#overlay{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titolo{
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    color: whitesmoke;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+#sectionbox{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionitem1{
+    display: flex;
+    width: 66.67%;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.numero{
+    color: darkblue;
+}
+
+.p1 img{
+    height: 60%;
+    width: 60%;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.p1 h1{
+    font-weight: 600;
+    text-align: left;
+    color: darkblue;
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.p1{
+    flex-grow: 1;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionitem2{
+    display: flex;
+    width: 66.67%;
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.sectionitem3{
+    display: flex;
+    width: 66.67%;
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.sectionitem4{
+    display: flex;
+    width: 66.67%;
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.sectionitem5{
+    display: flex;
+    width: 66.67%;
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.testoparagrafo{
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#testofooter{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sottotitolo{
+    line-height: normal;
+    color: lightblue;
+    font-family:'Lucida Sans';
+    font-size: 20px;
+}
+
+.tf1{
+    color: white;
+}
+
+.tf2{
+    color: white;
+}
+
+footer{
+    height: 120px;
+    background-color: coral;
+}
+
+@media (max-width: 500px) {
+    header {
+      height: 300px;
+      line-height: 1.2;
+    }
+    #sfondo{
+        height: 300px;
+        line-height: 1.2;
+    }
+    .nome{
+        font-size: 18px;
+    }
+    #sectionbox{
+        margin-top: 150px;
+    }
+    .sectionitem1 img{
+        height: 80%;
+        width: 80%;
+    }
+    .sectionitem2 img{
+        height: 80%;
+        width: 80%;
+    }
+    .sectionitem3 img{
+        height: 80%;
+        width: 80%;
+    }
+    .sectionitem4 img{
+        height: 80%;
+        width: 80%;
+    }
+    .sectionitem5 img{
+        height: 80%;
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    header .titolo{
+      height: 300px;
+      line-height: 1.2;
+    }
+}
+  
+@media (max-width: 500px) {
+    .testoparagrafo {
+      font-size: 14px;
+    }
+}
